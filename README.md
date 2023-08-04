@@ -1,6 +1,6 @@
 # dev-cinemapp
 
-### Olá amigx,
+### Olá amigo(a),
 
 ### Seja bem vindx ao nosso desafio!
 
