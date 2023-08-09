@@ -2,7 +2,7 @@
 
 ### Olá amigo(a),
 
-### Seja bem vindx ao nosso desafio!
+### Seja bem vindo(a) ao nosso desafio!
 
 Nosso passatempo favorito nessa quarentena tem sido assistir filmes e seriados, por isso pensamos em desenvolver uma solução que nos ajude na hora de selecionar o que mais gostamos. Caso você aceite o nosso desafio, precisamos que você implemente um sistema (fique a vontade pra escolher entre web ou mobile) onde será possível buscar por filmes e series utilizando a API (http://www.omdbapi.com/). Com todos esses filmes a nossa disposição queremos basicamente separar nossos favoritos, para que possamos encontrá-los facilmente depois. Portanto a sua solução deve:
 
