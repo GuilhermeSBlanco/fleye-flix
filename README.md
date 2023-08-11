@@ -14,9 +14,8 @@ Nosso passatempo favorito nessa quarentena tem sido assistir filmes e seriados, 
 
 Para auxiliar você nesse processo fizemos um protótipo rápido utilizando o Figma. Se quiser conferir é só seguir o link:
 
-[https://www.figma.com/proto/UE8zfSxxf8K0TzpgslbYhz/CinemAPP?node-id=1%3A28&scaling=contain](https://www.figma.com/proto/UE8zfSxxf8K0TzpgslbYhz/CinemAPP?node-id=1%3A28&scaling=contain)
-
-[teste](http://google.com)
+[Protótipo)[https://www.figma.com/proto/5M222ApFsTXvBTtUpvGXwk/Desafio-Vagas-Dev---FleyeFlix-(Shared)?page-id=6121%3A96907&type=design&node-id=6179-6612&viewport=-234%2C1573%2C0.4&t=Hhc28ZZFotaPjUc3-1&scaling=scale-down&starting-point-node-id=6179%3A6612]
+[Arquivo do Figma](https://www.figma.com/file/5M222ApFsTXvBTtUpvGXwk/Desafio-Vagas-Dev---FleyeFlix-(Shared)?type=design&node-id=6121%3A96907&mode=design&t=waehXN6fKsxkimVT-1)
 
 Para facilitar um pouco mais as coisas, já deixamos separada uma chave de acesso para a API (ou você pode criar a sua também):
 
