@@ -1,4 +1,4 @@
-# dev-cinemapp
+# Fleye Flix 🎦
 
 ### Olá amigo(a),
 
