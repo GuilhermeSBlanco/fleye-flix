@@ -2,17 +2,18 @@ import React, { useState, useEffect } from 'react'
 import { Link, useNavigate} from 'react-router-dom'
 import FavButton from '../components/FavButton'
 
-const MovieInfo = ({ movieId, favList=[], setFavList}) => {
+const MovieInfo = ({ movieId, favList=[], setFavList, setLoading}) => {
    
   const [info, setInfo] = useState({})
   
   const navigate = useNavigate()
 
   const fetchData =  async () => {
-    console.log('aaa')
+    setLoading(true)
     const data = await fetch('https://www.omdbapi.com/?apikey=925eba28&i=' + movieId + '&plot=full')
     const json = await data.json()
     setInfo(json)
+    setLoading(false)
   }
 
   useEffect(() => {

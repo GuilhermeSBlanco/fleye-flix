@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Search = ({movies = [], setMovies}) => {
+const Search = ({movies = [], setMovies, setLoading}) => {
     const [searchKey, setSearchKey] = useState('')
 
     const handleInput = (e) => {
@@ -9,10 +9,14 @@ const Search = ({movies = [], setMovies}) => {
 
     const handleSearch = (e) => {
         e.preventDefault();
+        setLoading(true)
         console.log(e.target.value)
         return fetch('http://www.omdbapi.com/?apikey=925eba28&s=' + searchKey)
         .then(r => r.json())
-        .then (m => setMovies(m.Search))
+        .then (m => {
+            setMovies(m.Search)
+            setLoading(false)
+        })       
     }
 
     return (
