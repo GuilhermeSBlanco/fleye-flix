@@ -1,13 +1,14 @@
 import React from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useLocation  } from 'react-router-dom'
 
 const Footer = () => {
-    const path = useNavigate()
+    const path = useLocation()
 
     return (
         <footer>
+            {console.log(path.pathname)}
                 <Link to="/" >
-                { path.location == '/' 
+                { path.pathname == '/' 
                   ? <svg width="72" height="64" viewBox="0 0 72 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="72" height="64" fill="#111111"/>
                   <path d="M33 31V21H39V31M27 18L36 11L45 18V29C45 29.5304 44.7893 30.0391 44.4142 30.4142C44.0391 30.7893 43.5304 31 43 31H29C28.4696 31 27.9609 30.7893 27.5858 30.4142C27.2107 30.0391 27 29.5304 27 29V18Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -23,7 +24,7 @@ const Footer = () => {
                 </Link>
 
                 <Link to="/fav" >
-                    { path.location == '/fav' 
+                    { path.pathname == '/fav' 
                       ? <svg width="72" height="64" viewBox="0 0 72 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <rect width="72" height="64" fill="#111111"/>
                       <path d="M44.8401 13.61C44.3294 13.099 43.7229 12.6936 43.0555 12.4171C42.388 12.1405 41.6726 11.9982 40.9501 11.9982C40.2276 11.9982 39.5122 12.1405 38.8448 12.4171C38.1773 12.6936 37.5709 13.099 37.0601 13.61L36.0001 14.67L34.9401 13.61C33.9084 12.5783 32.5092 11.9987 31.0501 11.9987C29.5911 11.9987 28.1918 12.5783 27.1601 13.61C26.1284 14.6417 25.5488 16.041 25.5488 17.5C25.5488 18.959 26.1284 20.3583 27.1601 21.39L28.2201 22.45L36.0001 30.23L43.7801 22.45L44.8401 21.39C45.3511 20.8792 45.7565 20.2728 46.033 19.6053C46.3096 18.9379 46.4519 18.2225 46.4519 17.5C46.4519 16.7775 46.3096 16.0621 46.033 15.3946C45.7565 14.7272 45.3511 14.1208 44.8401 13.61V13.61Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
