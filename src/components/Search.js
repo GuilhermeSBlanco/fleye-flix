@@ -8,10 +8,10 @@ const Search = ({movies = [], setMovies, setLoading}) => {
     }
 
     const handleSearch = (e) => {
-        e.preventDefault();
+        e.preventDefault()
         setLoading(true)
-        console.log(e.target.value)
-        return fetch('http://www.omdbapi.com/?apikey=925eba28&s=' + searchKey)
+
+        return fetch('https://www.omdbapi.com/?apikey=925eba28&s=' + searchKey, [{ mode: 'no-cors' }])
         .then(r => r.json())
         .then (m => {
             setMovies(m.Search)
