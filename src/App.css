@@ -1,38 +1,178 @@
-.App {
-  text-align: center;
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #111111;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+  height: 72px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo-svg {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+main {
+  width: 100%;
+  margin: 0 auto 50px auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*
+  Search 
+*/
+
+main .search-section {
+  position: relative;
+  padding: 0 0;
+}
+
+main .search-section form {
+  padding: 5px 25px;
+}
+
+.search-app-cover {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://gncnews.com.br/img/crop?img=56350556bb43b3ee09e4f55327f47955.jpg&w=800&h=400&fit=crop&fm=jpq&q=90');  
+  z-index: -1;
+}
+
+.color-fade {
+  width: 100%;
+  height: 100vh;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(17,17,17,1) 0%, rgba(255,255,255,0.10540540540540544) 300%);
+}
+
+main .search-section .search-title {
+  color: #FFFFFF;
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+}
+
+main .search-section .search-title h1, p {
+  margin: 0 0 25px 0;
+}
+
+main .search-section input {
+  width: 100%;
+  padding:10px;
+  border-radius: 6px;
+  outline: none;
+  background: #222222;
+  color: #FFFFFF;
+  border: 1px solid #5e5e5e;
+}
+
+main .search-section button {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  background: #ff6900;
+  color: #FFFFFF;
+  border-radius: 5px;
+  border: none;
+}
+
+/*
+  Main section, movie list 
+*/
+
+main .section-movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+main .section-movie-list .movie-item { 
+  width: 120px;
+  height: 160px;
+}
+
+/*
+  footer section
+*/
+
+footer {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #111111;
+  margin: 10px 0 0 0;
+}
+
+
+/*
+  movie info
+*/
+
+.movie-info {
+  width: 100%;
+  color: #FFFFFF;
+  padding: 15px;
+}
+
+.movie-info .movie-info-title h3, span {
+  margin: 10px;
+}
+
+.movie-info .movie-info-title span {
+  font-size: 13px;
+}
+
+.movie-info .movie-info-poster {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+}
+
+.movie-info .movie-info-opt {
+  display: flex;
+  gap: 5px;
+}
+
+.movie-info .movie-info-opt button {
+  padding: 10px;
+  border-radius: 6px;
+  color: #FFFFFF;
+}
+
+.movie-info .movie-info-opt .btn-watch {
+  display: flex;
+  gap: 5px;
+  background: #ff6900;
+}
+
+.movie-info .movie-info-opt .btn-add {
+  background: none;
+  border: 1px solid #bebebe;
+  width: 100%;
+}
+
+.movie-info-desc {
+  margin: 20px 0;
+}
+
+.movie-info-desc .info-genre-opt {
+  font-size: 11px;
+}
+
+/*
+  favorites
+*/
+
+.fav-title {
+  color: #FFFFFF;
+  padding: 10px;
 }
